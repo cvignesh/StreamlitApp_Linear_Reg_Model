@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler,LabelEncoder
 
 
 def load_model():
-    with  open("Oct12_Linear_Regression_Model/student_performance_linera_regression_model.pkl",'rb') as file:
+    with  open("student_performance_linera_regression_model.pkl",'rb') as file:
         model,scaler,le=pickle.load(file)
     return model,scaler,le
 
@@ -46,4 +46,5 @@ def main():
 if __name__ == "__main__":
     main()
     
+
 
